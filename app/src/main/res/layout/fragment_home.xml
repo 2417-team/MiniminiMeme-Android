@@ -32,6 +32,12 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/image_fragment_home_text_title">
 
+            <ImageView
+                android:layout_width="146dp"
+                android:layout_height="29dp"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/meme_dictionary" />
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_fragment_home_dictionary"
                 android:layout_width="match_parent"
