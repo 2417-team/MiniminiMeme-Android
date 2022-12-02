@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_all"
+        tools:context=".JeulgupddaActivity">
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="32dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="146dp"
+                    android:layout_height="29dp"
+                    android:layout_marginVertical="32dp"
+                    android:layout_marginBottom="12dp"
+                    android:src="@drawable/image_jeulgupdda" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="256dp"
+                        android:layout_height="256dp"
+                        android:src="@drawable/image_jeulgupdda_big" />
+
+                    <ImageView
+                        android:layout_width="146dp"
+                        android:layout_height="29dp"
+                        android:layout_marginVertical="32dp"
+                        android:layout_marginBottom="12dp"
+                        android:src="@drawable/image_jeulgupdda_title_alignment_center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="32dp"
+                        android:text="출처 : 나무위키 Pre-Cracked egg
+
+효율성은 개나 줘버린 것 같은 디자인에,
+포장 안에 있는 깐 달걀에 거품이 끼어서
+품질과 상태가 매우 안 좋아 보이고, 좌쪽
+하단엔 finally가 fimally로 오타가 난 데다
+우측 하단의 남자아이의 상태 등 총체적 난국
+으로 유명해졌다. 심지어 포장에는 CHINA
+라고 적혀있다.
+한국으로 넘어오면서 '껍질-미리깐 달걀'[3]
+로 알려지게 되었는데, 왼쪽 하단의 오타
+(fimally→마참내!)도 그대로 재현하는 높은
+퀄리티를 자랑한다.[4] 참고로 원본의 내용을
+지우고 비슷한 색상으로 덮어버린 뒤에
+'껍질-미리깐 달걀' 이라고 적었기 때문에, 글씨
+주변을 자세히 보면 다른 곳과 색상 차이가
+있는 것을 알 수 있다.
+"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
