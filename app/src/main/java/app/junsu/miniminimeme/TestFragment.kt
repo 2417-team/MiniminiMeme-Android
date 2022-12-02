@@ -23,4 +23,15 @@ class TestFragment : Fragment() {
         )
         return binding.root
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.webviewFragmentTest.apply {
+            loadUrl(
+                        "https://front-kjlt1fexn-2817.vercel.app/"
+            )
+            settings.javaScriptEnabled = true
+        }
+    }
 }
