@@ -1,5 +1,6 @@
 package app.junsu.miniminimeme
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
@@ -18,5 +19,14 @@ class MemeDictionaryActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         binding.lifecycleOwner = this
+
+        binding.cardActivityMemeDictionaryJeulgupdda.setOnClickListener {
+            startActivity(
+                Intent(
+                    this,
+                    JeulgupddaActivity::class.java,
+                )
+            )
+        }
     }
 }
